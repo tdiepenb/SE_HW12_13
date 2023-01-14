@@ -1,4 +1,4 @@
-package de.uni.koeln.se.datamodel;
+package de.uni.koeln.se.bookstore.datamodel;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class book {
+public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
@@ -15,11 +15,10 @@ public class book {
     private String author;
     private Integer dateYear;
 
-    public book() {
-
+    public Book() {
     }
 
-    public book(String name, String author, Integer dateYear) {
+    public Book(String name, String author, Integer dateYear) {
         this.name = name;
         this.author = author;
         this.dateYear = dateYear;
