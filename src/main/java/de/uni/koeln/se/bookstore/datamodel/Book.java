@@ -15,13 +15,16 @@ public class Book {
     private String author;
     private Integer dateYear;
 
+    private Double price;
+
     public Book() {
     }
 
-    public Book(String name, String author, Integer dateYear) {
+    public Book(String name, String author, Integer dateYear, Double price) {
         this.name = name;
         this.author = author;
         this.dateYear = dateYear;
+        this.price = price;
     }
 
     //getters and setters
@@ -55,5 +58,13 @@ public class Book {
 
     public void setDateYear(Integer dateYear) {
         this.dateYear = dateYear;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 }
